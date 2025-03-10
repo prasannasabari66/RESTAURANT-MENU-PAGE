@@ -1,0 +1,136 @@
+:root{
+    --grey:#F2E5BF;
+}
+
+body,h2{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.landing{
+    background-image: url('./pexels-valeriya-842571.jpg') ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+}
+header a{
+    text-decoration: none;
+    color: var(--grey);
+    min-width: 120px;
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+#logo{
+    flex: 2;
+    font-size: 3em;
+    font-weight: bolder;
+    min-width: 260px;
+}
+nav{
+    flex: 1;
+    display:flex;  
+    align-items: center;
+}
+nav a{
+    font-size: 1.5em;
+    flex: 1;
+}
+nav a:hover{
+    color: green;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.line1{
+    color: red;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.line2{
+    color: var(--grey);
+    font-size: 1.5em;
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    height: 30px;
+    margin-top: 2em;
+    border-radius: 10px;
+    box-sizing: content-box;
+    font-size: 18px;
+    background-color: rgb(62, 167, 62);
+    color: white;
+    border-color: aliceblue;
+}
+.menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    color: white;
+    background: linear-gradient(90deg, rgba(45,43,44,1) 0%, rgba(136,132,135,1) 100%);
+}
+#menuhead,#locationhead{
+    background: linear-gradient(90deg, rgba(45,43,44,1) 0%, rgba(136,132,135,1) 100%);
+    font-size: 1.8em;
+    color: red;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.menu th{
+    color: var(--grey);
+    font-size: 1.3em;
+    padding: 20px;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    justify-self: left;
+    flex: 1;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.locations{
+    background: linear-gradient(90deg, rgba(45,43,44,1) 0%, rgba(136,132,135,1) 100%);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.locations h2{
+    color: var(--grey);
+    margin-bottom: .8em;
+}
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-height: 220px;
+}
+footer{
+    background: linear-gradient(90deg, rgba(45,43,44,1) 0%, rgba(136,132,135,1) 100%);
+    color: white;
+    padding: 1em;
+}
+header span i,nav a i{
+    margin-right: .5em;
+}
+
